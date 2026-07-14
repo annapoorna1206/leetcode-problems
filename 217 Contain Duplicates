@@ -1,0 +1,52 @@
+# Contains Duplicate (LeetCode 217) https://leetcode.com/problems/contains-duplicate/description/
+
+## Problem Statement
+
+Given an integer array `nums`, return `true` if any value appears at least twice in the array. Otherwise, return `false` if all elements are distinct.
+
+### Example
+
+**Input:**
+```text
+nums = [1,2,3,1]
+```
+
+**Output:**
+```text
+true
+```
+
+---
+
+## Approach
+
+- Create a set to store the elements seen so far.
+- Traverse the array:
+  - If the current element is already in the set, return `True`.
+  - Otherwise, add it to the set.
+- If no duplicates are found, return `False`.
+
+---
+
+## Code
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nums.sort()
+        left=0
+        right=1
+        while right<len(nums):
+            if nums[left]==nums[right]:
+                return True
+            left+=1
+            right+=1
+        return False
+```
+
+---
+
+## Complexity
+
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
