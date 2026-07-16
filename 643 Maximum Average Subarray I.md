@@ -1,4 +1,4 @@
-# Maximum Average Subarray I (LeetCode 643)
+# Maximum Average Subarray I (LeetCode 643) https://leetcode.com/problems/maximum-average-subarray-i/description/
 
 ## Problem Statement
 
