@@ -23,20 +23,6 @@ k = 3
 ```text
 The substring "iii" contains 3 vowels.
 ```
-
----
-
-## Approach
-
-- Use the **Sliding Window** technique.
-- Count the vowels in the first window of size `k`.
-- Slide the window one character at a time:
-  - Remove the contribution of the outgoing character.
-  - Add the contribution of the incoming character.
-- Keep track of the maximum vowel count seen.
-
----
-
 ## Code
 
 ```python
