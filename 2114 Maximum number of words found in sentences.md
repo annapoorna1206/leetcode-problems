@@ -19,18 +19,6 @@ sentences = ["alice and bob love leetcode",
 ```text
 6
 ```
-
----
-
-## Approach
-
-- Traverse each sentence in the array.
-- Split the sentence using spaces (`split()`).
-- Count the number of words in the sentence.
-- Keep track of the maximum count found.
-
----
-
 ## Code
 
 ```python
