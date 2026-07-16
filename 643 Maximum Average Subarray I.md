@@ -23,20 +23,6 @@ Subarray = [12,-5,-6,50]
 Average = (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
 ```
 
----
-
-## Approach
-
-- Use the **Sliding Window** technique.
-- Calculate the sum of the first `k` elements.
-- Slide the window one element at a time:
-  - Add the new element entering the window.
-  - Remove the element leaving the window.
-- Keep track of the maximum window sum.
-- Return `max_sum / k`.
-
----
-
 ## Code
 
 ```python
